@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LPU Faculty Feedback Portal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">LPU</div>
+        <div class="header-text">
+            <h2>Faculty Feedback Portal</h2>
+            <p>Faculty Feedback and Evaluation System</p>
+        </div>
+    </header>
+
+
+    <main class="container" id="feedback">
+        <div class="page-heading">
+            <h1>Faculty Evaluation Form</h1>
+            <p>Share your valuable feedback to improve teaching quality.</p>
+        </div>
+
+        <form action="#" method="post">
+
+            <div class="form-group">
+                <label for="faculty">Select Faculty Name</label>
+                <select id="faculty" name="faculty" required>
+                    <option value="">-- Select Faculty --</option>
+                    <option value="faculty1">Faculty 1</option>
+                    <option value="faculty2">Faculty 2</option>
+                    <option value="faculty3">Faculty 3</option>
+                    <option value="faculty4">Faculty 4</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="subject">Subject Name</label>
+                <input type="text" id="subject" name="subject"
+                       placeholder="Enter subject name" required>
+            </div>
+
+            <div class="form-group">
+                <label for="semester">Semester</label>
+                <select id="semester" name="semester" required>
+                    <option value="">-- Select Semester --</option>
+                    <option>Semester 1</option>
+                    <option>Semester 2</option>
+                    <option>Semester 3</option>
+                    <option>Semester 4</option>
+                    <option>Semester 5</option>
+                    <option>Semester 6</option>
+                    <option>Semester 7</option>
+                    <option>Semester 8</option>
+                </select>
+            </div>
+
+            <h3 class="section-title">Teaching Evaluation</h3>
+
+            <div class="question">
+                <label>1. Knowledge of the Subject</label>
+                <div class="options">
+                    <label><input type="radio" name="knowledge" value="5" required> Excellent</label>
+                    <label><input type="radio" name="knowledge" value="4"> Good</label>
+                    <label><input type="radio" name="knowledge" value="3"> Average</label>
+                    <label><input type="radio" name="knowledge" value="2"> Poor</label>
+                    <label><input type="radio" name="knowledge" value="1"> Very Poor</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>2. Communication Skills</label>
+                <div class="options">
+                    <label><input type="radio" name="communication" value="5" required> Excellent</label>
+                    <label><input type="radio" name="communication" value="4"> Good</label>
+                    <label><input type="radio" name="communication" value="3"> Average</label>
+                    <label><input type="radio" name="communication" value="2"> Poor</label>
+                    <label><input type="radio" name="communication" value="1"> Very Poor</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>3. Punctuality and Regularity</label>
+                <div class="options">
+                    <label><input type="radio" name="punctuality" value="5" required> Excellent</label>
+                    <label><input type="radio" name="punctuality" value="4"> Good</label>
+                    <label><input type="radio" name="punctuality" value="3"> Average</label>
+                    <label><input type="radio" name="punctuality" value="2"> Poor</label>
+                    <label><input type="radio" name="punctuality" value="1"> Very Poor</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>4. Classroom Interaction</label>
+                <div class="options">
+                    <label><input type="radio" name="interaction" value="5" required> Excellent</label>
+                    <label><input type="radio" name="interaction" value="4"> Good</label>
+                    <label><input type="radio" name="interaction" value="3"> Average</label>
+                    <label><input type="radio" name="interaction" value="2"> Poor</label>
+                    <label><input type="radio" name="interaction" value="1"> Very Poor</label>
+                </div>
+            </div>
+
+            <div class="question">
+                <label>5. Overall Teaching Performance</label>
+                <div class="options">
+                    <label><input type="radio" name="performance" value="5" required> Excellent</label>
+                    <label><input type="radio" name="performance" value="4"> Good</label>
+                    <label><input type="radio" name="performance" value="3"> Average</label>
+                    <label><input type="radio" name="performance" value="2"> Poor</label>
+                    <label><input type="radio" name="performance" value="1"> Very Poor</label>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="comments">Suggestions and Comments</label>
+                <textarea id="comments" name="comments"
+                    placeholder="Write your suggestions here..."></textarea>
+            </div>
+
+            <button type="submit">Submit Feedback</button>
+
+        </form>
+    </main>
+
+    <footer id="about">
+        <p>Faculty Feedback and Evaluation Portal | Academic Project</p>
+    </footer>
+
+</body>
+</html>
