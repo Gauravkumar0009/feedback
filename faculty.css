@@ -1,0 +1,174 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #F1F5F9;
+    color: #1E293B;
+}
+
+header {
+    background-color: #0F172A;
+    color: white;
+    padding: 25px 40px;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    color: #CBD5E1;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 18px;
+    padding: 8px;
+}
+
+nav a:hover,
+nav a.active {
+    color: #38BDF8;
+    border-bottom: 2px solid #38BDF8;
+}
+
+main {
+    max-width: 1200px;
+    margin: auto;
+    padding: 25px;
+}
+
+.overview h2,
+.content-section h2 {
+    margin-top: 0;
+    color: #0F172A;
+}
+
+.cards {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    background-color: white;
+    padding: 22px;
+    border-radius: 10px;
+    border: 1px solid #E2E8F0;
+    flex: 1;
+    min-width: 200px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.card p {
+    color: #64748B;
+}
+
+.card h2 {
+    color: #2563EB;
+    margin-bottom: 0;
+    font-size: 28px;
+}
+
+.content-section {
+    background-color: white;
+    padding: 22px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 1px solid #E2E8F0;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.04);
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 15px;
+}
+
+th, td {
+    padding: 14px;
+    text-align: left;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+th {
+    background-color: #F1F5F9;
+    color: #334155;
+}
+
+tr:hover {
+    background-color: #F8FAFC;
+}
+
+.status {
+    font-weight: bold;
+    color: #15803D;
+}
+
+.status.needs-attention {
+    color: #DC2626;
+}
+
+.comment {
+    background-color: #F8FAFC;
+    padding: 15px;
+    margin-top: 12px;
+    border-left: 4px solid #2563EB;
+    border-radius: 5px;
+}
+
+.comment p {
+    margin: 5px 0;
+}
+
+.empty-message {
+    color: #64748B;
+    padding: 10px;
+}
+
+footer {
+    background-color: #0F172A;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+    header {
+        padding: 20px;
+    }
+
+    main {
+        padding: 15px;
+    }
+
+    .cards {
+        flex-direction: column;
+    }
+
+    th, td {
+        padding: 10px;
+        font-size: 13px;
+    }
+}

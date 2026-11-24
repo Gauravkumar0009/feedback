@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faculty Feedback Dashboard</title>
+    <link rel="stylesheet" href="faculty.css">
+    <script src="faculty.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <div class="header-content">
+            <div>
+                <h1>Faculty Feedback Dashboard</h1>
+                <p>View student feedback and faculty performance.</p>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <a href="faculty.html" class="active">By Faculty</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="overview">
+            <h2>Faculty Overview</h2>
+
+            <div class="cards">
+                <div class="card">
+                    <p>Total Faculty</p>
+                    <h2>5</h2>
+                </div>
+
+                <div class="card">
+                    <p>Total Responses</p>
+                    <h2 id="totalResponses">0</h2>
+                </div>
+
+                <div class="card">
+                    <p>Overall Average Rating</p>
+                    <h2 id="overallRating">0.00 / 5</h2>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Faculty-wise Performance</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Faculty Name</th>
+                            <th>Courses</th>
+                            <th>Responses</th>
+                            <th>Average Rating</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="facultyTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Faculty Course Details</h2>
+
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Faculty</th>
+                            <th>Course</th>
+                            <th>Responses</th>
+                            <th>Average Rating</th>
+                        </tr>
+                    </thead>
+
+                    <tbody id="courseTable"></tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <h2>Recent Student Comments</h2>
+            <div id="comments">
+                <p class="empty-message">No feedback has been submitted yet.</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Course Evaluation Portal | Faculty Dashboard</p>
+    </footer>
+
+</body>
+</html>
